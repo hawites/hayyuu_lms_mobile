@@ -30,8 +30,8 @@ class _YoutubeVideoPlayerFlutterState extends State<YoutubeVideoPlayerFlutter> {
 
   late PlayerState _playerState;
   late YoutubeMetaData _videoMetaData;
-  double _volume = 100;
-  bool _muted = false;
+  final double _volume = 100;
+  final bool _muted = false;
   bool _isPlayerReady = false;
 
   // Initialize the state

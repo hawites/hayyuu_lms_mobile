@@ -1,7 +1,7 @@
 // ignore_for_file: deprecated_member_use, use_build_context_synchronously, avoid_print
 
 import 'package:academy_lms_app/screens/course_detail.dart';
-import 'package:academy_lms_app/screens/image_viewer_Screen.dart';
+import 'package:academy_lms_app/screens/image_viewer_screen.dart';
 import 'package:academy_lms_app/widgets/appbar_one.dart';
 import 'package:academy_lms_app/widgets/from_vimeo_player.dart';
 import 'package:academy_lms_app/widgets/new_youtube_player.dart';
