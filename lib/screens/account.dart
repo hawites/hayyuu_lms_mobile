@@ -349,7 +349,7 @@ class _AccountScreenState extends State<AccountScreen> {
   }
 }
 
-buildPopupDialogLogout(
+Dialog buildPopupDialogLogout(
   BuildContext context,
   // Function(BuildContext) navigateTo,
   String title,

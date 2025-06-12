@@ -49,7 +49,7 @@ class _CourseDetailScreenState extends State<CourseDetailScreen>
   var msg2 = 'Added to cart';
   var msg1 = 'please tap again to Buy Now';
 
-  getEnroll(String course_id) async {
+  Future<void> getEnroll(String course_id) async {
     setState(() {
       isLoading = true;
     });

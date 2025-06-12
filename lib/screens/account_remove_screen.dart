@@ -25,7 +25,7 @@ class _AccountRemoveScreenState extends State<AccountRemoveScreen> {
 
   bool hidePassword = true;
 
-  accountDelete() async {
+  Future<void> accountDelete() async {
     final prefs = await SharedPreferences.getInstance();
     final authToken = (prefs.getString('access_token') ?? '');
 
@@ -197,7 +197,7 @@ class _AccountRemoveScreenState extends State<AccountRemoveScreen> {
     );
   }
 
-  buildPopupDialog(BuildContext context) {
+  AlertDialog buildPopupDialog(BuildContext context) {
     // ignore: no_leading_underscores_for_local_identifiers
     StateSetter _setState;
     return AlertDialog(

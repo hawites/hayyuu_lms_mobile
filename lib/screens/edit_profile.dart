@@ -46,7 +46,7 @@ class _EditPrfileScreenState extends State<EditPrfileScreen> {
     getUserInfo();
   }
 
-  getUserInfo() async {
+  Future<void> getUserInfo() async {
     setState(() {
       _isLoading = true;
     });

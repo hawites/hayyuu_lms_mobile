@@ -37,7 +37,7 @@ class _FilterScreenState extends State<FilterScreen> {
   String _selectedLanguage = 'all';
   String _selectedRating = 'all';
 
-  get kBackgroundColor => null;
+  Null get kBackgroundColor => null;
 
   @override
   void initState() {

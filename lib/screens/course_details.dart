@@ -46,7 +46,7 @@ class _CourseDetailScreen1State extends State<CourseDetailScreen1>
   var msg = 'Removed from cart';
   var msg1 = 'please tap again to Buy Now';
 
-  getEnroll(String course_id) async {
+  Future<void> getEnroll(String course_id) async {
     setState(() {
       isLoading = true;
     });

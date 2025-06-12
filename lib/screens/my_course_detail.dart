@@ -79,9 +79,9 @@ class _MyCourseDetailScreenState extends State<MyCourseDetailScreen>
     super.dispose();
   }
 
-  _scrollListener() {}
+  void _scrollListener() {}
 
-  _smoothScrollToTop() {
+  void _smoothScrollToTop() {
     _scrollController.animateTo(0,
         duration: const Duration(microseconds: 300), curve: Curves.ease);
   }
@@ -389,7 +389,7 @@ Future<String> getGoogleDriveDownloadUrl(String fileId) async {
     }
   }
 
-  getLessonIcon(String lessonType) {
+  SvgPicture getLessonIcon(String lessonType) {
     // print(lessonType);
     if (lessonType == 'video-url' ||
         lessonType == 'vimeo-url' ||

@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import '../providers/courses.dart';
 import 'common_functions.dart';
 
-buildPopupDialog(BuildContext context, items) {
+AlertDialog buildPopupDialog(BuildContext context, items) {
   return AlertDialog(
     title: const Text('Notifying'),
     content: const Column(
@@ -43,7 +43,7 @@ buildPopupDialog(BuildContext context, items) {
   );
 }
 
-buildPopupDialogWishList(BuildContext context, isWishlisted, id, msg) {
+AlertDialog buildPopupDialogWishList(BuildContext context, isWishlisted, id, msg) {
   return AlertDialog(
     title: const Text('Notifying'),
     content: Column(

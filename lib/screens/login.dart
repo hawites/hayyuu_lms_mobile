@@ -75,7 +75,7 @@ class _LoginScreenState extends State<LoginScreen> {
   //   }
   // }
 
-  getLogin() async {
+  Future<void> getLogin() async {
   setState(() {
     _isLoading = true;
   });
@@ -148,7 +148,7 @@ class _LoginScreenState extends State<LoginScreen> {
 }
 
 
-  isLogin() async {
+  Future<void> isLogin() async {
     var navigator = Navigator.of(context);
     sharedPreferences = await SharedPreferences.getInstance();
     token = sharedPreferences!.getString("access_token");

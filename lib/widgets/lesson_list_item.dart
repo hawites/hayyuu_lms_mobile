@@ -58,7 +58,7 @@ class _LessonListItemState extends State<LessonListItem> {
     // }
   }
 
-  getLessonIcon(String lessonType) {
+  SvgPicture getLessonIcon(String lessonType) {
     // print(lessonType);
     if (lessonType == 'video-url' ||
         lessonType == 'vimeo-url' ||
